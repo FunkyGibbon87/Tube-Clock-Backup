@@ -54,6 +54,12 @@ Time zone offset from UTC (set for Brisbane, UTC+10, no daylight saving)
 
 Versions
 
+v2.0 (Nov 2026): non-blocking rewrite. No `delay()` anywhere; the display runs as a `millis()`
+state machine. GPS decoded by TinyGPS++ with checksum checks. RTC set from GPS UTC plus the time zone,
+with proper date rollover. Starts on the first satellite it hears; no full position fix needed.Nightly 
+3am resync. Boot sync gives up after 5 minutes and runs on the RTC.
+
+
 v1.2 (2024): the original hand-written version that ran for over 20 months. Kept as a fallback in
 `firmware/TubeClock_v1_2/`.
 Build log
