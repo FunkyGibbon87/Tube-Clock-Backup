@@ -5,7 +5,7 @@ A single-tube VFD clock that spells out the time one digit at a time on a Soviet
 This was my first ever microcontroller project. It took a long time, borrowed ideas from many people, and has been running reliably since early 2024.
 
 
-The clock
+![The Clock](clock.png)
 
 How it works
 One tube, four digits. The IV-4 can only show one character at a time, so the clock shows the time as a sequence: hour tens, hour units, minute tens, minute units. Each numeral builds up in animated layers rather than just switching on. A full time cycle takes about 7–8 seconds.
