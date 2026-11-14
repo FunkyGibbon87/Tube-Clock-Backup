@@ -60,7 +60,7 @@ with proper date rollover. Starts on the first satellite it hears; no full posit
 3am resync. Boot sync gives up after 5 minutes and runs on the RTC.
 
 
-- v1.2 (2024): the original hand-written version that ran for over 20 months. Kept as a fallback in
+- v1.2 (Feb 2024): the original hand-written version that ran for over 20 months. Kept as a fallback in
 `firmware/TubeClock_v1_2/`.
 
 Build log
