@@ -56,7 +56,7 @@ Versions
 
 v2.0 (Nov 2026): non-blocking rewrite. No `delay()` anywhere; the display runs as a `millis()`
 state machine. GPS decoded by TinyGPS++ with checksum checks. RTC set from GPS UTC plus the time zone,
-with proper date rollover. Starts on the first satellite it hears; no full position fix needed.Nightly 
+with proper date rollover. Starts on the first satellite it hears; no full position fix needed. Nightly 
 3am resync. Boot sync gives up after 5 minutes and runs on the RTC.
 
 
@@ -70,7 +70,7 @@ caused by an oversized time string.
 May 2024: tried moving it to a Waveshare ESP32. No go, so it stayed on the Nano clone.
 Aug 2025: running for 15 months with no issues.
 Jan 2026: running for 20 months with no issues.
-Nov 2026: v2.0 non-blocking rewrite and v2.1 quick-start GPS.
+Nov 2026: Still running, no issues, but time for a code clean up -> Version 2.0
 
 
 Ideas for v3
