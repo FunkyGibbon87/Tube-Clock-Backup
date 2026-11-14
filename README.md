@@ -22,10 +22,10 @@ No GPS? No problem. If there's no GPS time after 5 minutes at power-up, it carri
 
 Parts list
 
-1	IV-4 VFD tube	16-segment alphanumeric, Soviet era
-1	3D-printed tube holder	Holds the tube upright on the board
-1	Arduino Nano clone, USB-C	Shows PE0/PE1 pins, so likely an ATmega328PB-type clone. Uses the Old Bootloader setting
-1	GY-NEO6MV2 GPS module (u-blox NEO-6M)	With ceramic patch antenna on a u.FL lead. TX → D9, RX → D10
+- 1	IV-4 VFD tube	16-segment alphanumeric, Soviet era
+- 1	3D-printed tube holder	Holds the tube upright on the board
+- 1	Arduino Nano clone, USB-C	Shows PE0/PE1 pins, so likely an ATmega328PB-type clone. Uses the Old Bootloader setting
+- 1	GY-NEO6MV2 GPS module (u-blox NEO-6M)	With ceramic patch antenna on a u.FL lead. TX → D9, RX → D10
 1	DS3231 RTC module	SDA → A4, SCL → A5. Rechargeable backup cell soldered on
 2	74HC595 shift registers (16-pin DIP)	Load the segment and grid data <!-- confirm part number -->
 2	High-voltage driver chips (18-pin DIP)	Switch the tube's segments and grid at high voltage, e.g. UDN2981 / TD62783 <!-- confirm part number -->
