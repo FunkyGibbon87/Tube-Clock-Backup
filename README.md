@@ -4,7 +4,6 @@ A single-tube VFD clock that spells out the time one digit at a time on a Soviet
 
 This was my first ever microcontroller project. It took a long time, borrowed ideas from many people, and has been running reliably since early 2024.
 
-<!-- Add a photo: drag it into the repo, then change the file name below -->
 
 The clock
 
@@ -40,8 +39,8 @@ Useful settings near the top of the sketch:
 Time zone offset from UTC (set for Brisbane, UTC+10, no daylight saving)
 RESYNC_HOUR: the hour of the nightly GPS resync (default 3am)
 Versions
-v2.1 (Nov 2026): starts on the first satellite it hears; no full position fix needed.
-v2.0 (Nov 2026): non-blocking rewrite. No delay() anywhere; the display runs as a millis() state machine. GPS decoded by TinyGPS++ with checksum checks. RTC set from GPS UTC plus the time zone, with proper date rollover. Nightly 3am resync. Boot sync gives up after 5 minutes and runs on the RTC.
+
+
 v1.2 (2024): the original hand-written version that ran for over 20 months. Kept as a fallback in firmware/TubeClock_v1_2/.
 Build log
 Mar 2024: working GPS sync. Updated numerals 1 and 7, added a check for 0 seconds in the NMEA string.
@@ -50,6 +49,7 @@ May 2024: tried moving it to a Waveshare ESP32. No go, so it stayed on the Nano 
 Aug 2025: running for 15 months with no issues.
 Jan 2026: running for 20 months with no issues.
 Nov 2026: v2.0 non-blocking rewrite and v2.1 quick-start GPS.
+
 Ideas for v3
 Custom PCB (keeping plug-in modules) in a proper case
 Brightness control and automatic night dimming
