@@ -66,7 +66,7 @@ with proper date rollover. Starts on the first satellite it hears; no full posit
 Build log
 - Mar 2024: working GPS sync. Updated numerals 1 and 7, added a check for 0 seconds in the NMEA string.
 - Mar 2024: animated numerals, optimised byte shifting with a shared function, lookup converted to a
-2D array. Fitted 100 nF caps to each shift register and 10 µF across the board power. Fixed a crash
+2D array (Thanks Conrad!). Fitted 100 nF caps to each shift register and 10 µF across the board power. Fixed a crash
 caused by an oversized time string.
 - May 2024: tried moving it to a Waveshare ESP32. No go, so it stayed on the Nano clone.
 - Aug 2025: running for 15 months with no issues.
